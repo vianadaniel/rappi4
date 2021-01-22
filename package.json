@@ -1,0 +1,35 @@
+{
+  "name": "labenu-system14",
+  "version": "1.0.0",
+  "description": "labenu-system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "clear && echo \"Starting application... \" && tsc && node ./build/index.js",
+    "create-table": "ts-node-dev ./src/data/createPokemonTable.ts",
+    "dev": "ts-node-dev ./src/index.ts"
+  },
+  "keywords": [
+    "knex",
+    "express",
+    "dotenv"
+  ],
+  "author": "labenu",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.0",
+    "knex": "^0.21.8",
+    "moment": "^2.29.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.8",
+    "@types/express": "^4.17.0",
+    "@types/knex": "^0.16.1",
+    "@types/node": "^14.0.27",
+    "ts-node-dev": "^1.0.0",
+    "typescript": "^3.9.7"
+  }
+}
